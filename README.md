@@ -48,7 +48,7 @@ python -m venv .venv
 .venv/bin/pip install openai qdrant-client python-dotenv
 
 # 평가 실행 (judge 모델 gpt-4o-mini 사용, 100문항 기준 약 $0.5~1 추가 비용)
-.venv/bin/python evaluate_rag.py
+.venv/bin/python evaluate.py
 ```
 
 ---

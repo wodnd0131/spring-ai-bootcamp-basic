@@ -36,7 +36,7 @@ cp .env.example .env   # OpenAI API 키 입력
 
 ## 평가
 
-`data/test_questions.json`에 100개의 테스트 질문이 있습니다 (easy 30 / medium 44 / hard 26).
+`data/test_questions.json`에 150개의 테스트 질문이 있습니다 (easy 30 / medium 94 / hard 26).
 
 서버를 띄운 상태에서 평가 스크립트를 실행할 수 있습니다:
 
@@ -48,7 +48,7 @@ python -m venv .venv
 .venv/bin/pip install openai qdrant-client python-dotenv
 
 # 평가 실행 (judge 모델 gpt-4o-mini 사용, 100문항 기준 약 $0.5~1 추가 비용)
-.venv/bin/python evaluate_rag.py
+.venv/bin/python evaluate.py
 ```
 
 ---
@@ -66,7 +66,7 @@ spring-ai-bootcamp-basic/
 │   ├── layer1_faq/             # 공식 FAQ 문서
 │   ├── layer2_policies/        # 사내 정책 문서
 │   ├── layer3_chatlogs/        # 고객 상담 로그
-│   └── test_questions.json     # 평가용 질문 100개
+│   └── test_questions.json     # 평가용 질문 150개
 ├── src/
 │   └── main/java/com/cholog/bootcamp/
 │       └── Application.java    # 여기서부터 만드세요

@@ -61,7 +61,7 @@ POST /api/chat
 ### 완료 기준
 
 - `POST /api/chat`이 200 응답과 함께 답변을 반환한다
-- 테스트 질문 100개(`data/test_questions.json`)에 대한 정확도를 측정할 수 있다
+- 테스트 질문 150개(`data/test_questions.json`)에 대한 정확도를 측정할 수 있다
 - 3개 레이어 데이터를 모두 활용한다
 
 그리고 한 가지 더 — **벽 리포트**:

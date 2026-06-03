@@ -20,7 +20,7 @@
 ### 2. 환경 설정
 
 ```bash
-cp .env.example .env
+cp .env .env
 # OPENAI_API_KEY=sk-... 입력
 
 ./gradlew clean compileJava

@@ -3,6 +3,9 @@ spring:
     import: optional:file:.env[.properties]
   application:
     name: spring-ai-bootcamp-basic
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
   ai:
     openai:
       api-key: ${OPENAI_API_KEY}
@@ -13,3 +16,6 @@ spring:
       embedding:
         options:
           model: text-embedding-3-small
+
+cors:
+  allowed-origins: 'http://localhost:8080'

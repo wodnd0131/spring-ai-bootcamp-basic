@@ -19,3 +19,7 @@ spring:
 
 cors:
   allowed-origins: 'http://localhost:8080'
+
+logging:
+  level:
+    org.springframework.ai.chat.client.advisor: DEBUG
